@@ -351,3 +351,42 @@ Caused by: javax.net.ssl.SSLException: Unsupported record version Unknown-0.0
 2019-10-09 14:52:22.911 DEBUG 6527 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
 2019-10-09 14:52:22.928 DEBUG 6527 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
 2019-10-09 14:52:22.950 DEBUG 6527 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 1
+2019-10-09 15:50:23.215  INFO 6527 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-09 15:50:23.222  INFO 6527 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-09 15:50:27.343  INFO 7389 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 7389 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
+2019-10-09 15:50:27.347  INFO 7389 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
+2019-10-09 15:50:28.336  INFO 7389 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-09 15:50:28.337  INFO 7389 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-09 15:50:28.415  INFO 7389 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-09 15:50:29.158  INFO 7389 --- [main] com.one.app.App                          : Started App in 2.219 seconds (JVM running for 3.142)
+2019-10-09 15:50:29.160  INFO 7389 --- [main] com.one.app.App                          : StartApplication...
+2019-10-09 15:50:34.289  INFO 7389 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-09 15:50:34.660  INFO 7389 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-09 15:53:31.951  INFO 7389 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-09 15:53:31.992 DEBUG 7389 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
+2019-10-09 15:53:32.007 DEBUG 7389 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
+2019-10-09 15:53:32.025 DEBUG 7389 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 1
+2019-10-09 16:01:00.757 DEBUG 7389 --- [http-nio-8087-exec-5] com.one.app.Mapper.UserMapper.addtUser   : ==>  Preparing: insert into users (userId,userName,gender,age) values (?,?,?,?) 
+2019-10-09 16:01:00.758 DEBUG 7389 --- [http-nio-8087-exec-5] com.one.app.Mapper.UserMapper.addtUser   : ==> Parameters: 0(Integer), "Jason"(String), "male"(String), 100(Integer)
+2019-10-09 16:01:00.761 DEBUG 7389 --- [http-nio-8087-exec-5] com.one.app.Mapper.UserMapper.addtUser   : <==    Updates: 1
+2019-10-09 16:01:09.126 DEBUG 7389 --- [http-nio-8087-exec-6] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
+2019-10-09 16:01:09.127 DEBUG 7389 --- [http-nio-8087-exec-6] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
+2019-10-09 16:01:09.128 DEBUG 7389 --- [http-nio-8087-exec-6] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 2
+2019-10-09 16:01:52.291  INFO 7389 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-09 16:01:52.303  INFO 7389 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-09 16:01:55.801  INFO 7529 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 7529 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
+2019-10-09 16:01:55.804  INFO 7529 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
+2019-10-09 16:01:56.891  INFO 7529 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-09 16:01:56.891  INFO 7529 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-09 16:01:56.975  INFO 7529 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-09 16:01:57.718  INFO 7529 --- [main] com.one.app.App                          : Started App in 2.252 seconds (JVM running for 2.86)
+2019-10-09 16:01:57.719  INFO 7529 --- [main] com.one.app.App                          : StartApplication...
+2019-10-09 16:01:57.721  INFO 7529 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-09 16:01:58.048  INFO 7529 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-09 16:02:06.135  INFO 7529 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-09 16:02:06.193 DEBUG 7529 --- [http-nio-8087-exec-2] com.one.app.Mapper.UserMapper.addUser    : ==>  Preparing: insert into users (userName,gender,age) values (?,?,?) 
+2019-10-09 16:02:06.213 DEBUG 7529 --- [http-nio-8087-exec-2] com.one.app.Mapper.UserMapper.addUser    : ==> Parameters: naruto(String), male(String), 111(Integer)
+2019-10-09 16:02:06.215 DEBUG 7529 --- [http-nio-8087-exec-2] com.one.app.Mapper.UserMapper.addUser    : <==    Updates: 1
+2019-10-09 16:02:12.968 DEBUG 7529 --- [http-nio-8087-exec-3] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
+2019-10-09 16:02:12.969 DEBUG 7529 --- [http-nio-8087-exec-3] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
+2019-10-09 16:02:12.990 DEBUG 7529 --- [http-nio-8087-exec-3] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 3

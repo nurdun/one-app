@@ -12,6 +12,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.one.app.Model.User;
 
+import static org.springframework.web.bind.annotation.RequestMethod.POST;
+
 @RestController
 public class UserController {
     @Autowired
@@ -21,5 +23,10 @@ public class UserController {
     @RequestMapping("/users")
     public List<User> getUsers(){
         return userService.getUsers();
+    }
+
+    @RequestMapping(method = POST,value = "/adduser")
+    public String addUser(User user){
+        return userService.addUser(user);
     }
  }

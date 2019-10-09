@@ -23,4 +23,14 @@ public class UserService {
     public List<User> getUsers(){
         return userMapper.getUsers();
     }
+
+    public  String addUser(User user){
+        try{
+            String result = "Succeed";
+            userMapper.addUser(user);
+            return result;
+        }catch (Exception err){
+            return err.toString();
+        }
+    }
 }
