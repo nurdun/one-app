@@ -65,3 +65,72 @@
 2019-10-11 14:18:07.659 DEBUG 6967 --- [http-nio-8087-exec-1] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
 2019-10-11 14:18:07.659 DEBUG 6967 --- [http-nio-8087-exec-1] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 4(Integer)
 2019-10-11 14:18:07.661 DEBUG 6967 --- [http-nio-8087-exec-1] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 1
+2019-10-11 16:02:05.184  INFO 6967 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-11 16:02:05.189  INFO 6967 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-11 16:02:09.554  INFO 8307 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 8307 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
+2019-10-11 16:02:09.563  INFO 8307 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
+2019-10-11 16:02:10.511  INFO 8307 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 16:02:10.512  INFO 8307 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-11 16:02:10.603  INFO 8307 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 16:02:11.698  INFO 8307 --- [main] com.one.app.App                          : Started App in 2.523 seconds (JVM running for 3.574)
+2019-10-11 16:02:11.699  INFO 8307 --- [main] com.one.app.App                          : StartApplication...
+2019-10-11 16:02:11.702  INFO 8307 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 16:02:12.018  INFO 8307 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 16:03:37.496  INFO 8307 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-11 16:03:37.502  INFO 8307 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-11 16:03:39.311  INFO 8326 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 8326 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
+2019-10-11 16:03:39.316  INFO 8326 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
+2019-10-11 16:03:40.376  INFO 8326 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 16:03:40.377  INFO 8326 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-11 16:03:40.457  INFO 8326 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 16:03:41.527  INFO 8326 --- [main] com.one.app.App                          : Started App in 2.607 seconds (JVM running for 3.252)
+2019-10-11 16:03:41.528  INFO 8326 --- [main] com.one.app.App                          : StartApplication...
+2019-10-11 16:03:41.530  INFO 8326 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 16:03:41.792  INFO 8326 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 16:06:07.426  INFO 8326 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 16:06:09.759 DEBUG 8326 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 16:06:09.785 DEBUG 8326 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 2(Integer)
+2019-10-11 16:06:09.805 DEBUG 8326 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 0
+2019-10-11 16:25:55.636  WARN 8326 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s576ms).
+2019-10-11 16:25:55.637 DEBUG 8326 --- [http-nio-8087-exec-5] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 16:25:55.639 DEBUG 8326 --- [http-nio-8087-exec-5] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 2(Integer)
+2019-10-11 16:25:55.640 DEBUG 8326 --- [http-nio-8087-exec-5] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 0
+2019-10-11 16:30:00.660  WARN 8326 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m5s9ms).
+2019-10-11 16:36:41.417  WARN 8326 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m40s754ms).
+2019-10-11 16:37:41.396  WARN 8326 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s982ms).
+2019-10-11 16:44:47.940  WARN 8326 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m6s544ms).
+2019-10-11 16:44:48.225 DEBUG 8326 --- [http-nio-8087-exec-8] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 16:44:48.226 DEBUG 8326 --- [http-nio-8087-exec-8] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 2(Integer)
+2019-10-11 16:44:48.227 DEBUG 8326 --- [http-nio-8087-exec-8] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 0
+2019-10-11 16:53:24.462  INFO 8326 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-11 16:53:24.469  INFO 8326 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-11 16:53:28.143  INFO 9001 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 9001 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
+2019-10-11 16:53:28.146  INFO 9001 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
+2019-10-11 16:53:29.214  INFO 9001 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 16:53:29.215  INFO 9001 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-11 16:53:29.298  INFO 9001 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 16:53:30.388  INFO 9001 --- [main] com.one.app.App                          : Started App in 2.619 seconds (JVM running for 3.196)
+2019-10-11 16:53:30.391  INFO 9001 --- [main] com.one.app.App                          : StartApplication...
+2019-10-11 16:53:30.395  INFO 9001 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 16:53:30.660  INFO 9001 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 16:53:47.646  INFO 9001 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 16:53:50.282 DEBUG 9001 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 16:53:50.301 DEBUG 9001 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 2(Integer)
+2019-10-11 16:53:50.319 DEBUG 9001 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 0
+2019-10-11 16:57:24.052  WARN 9001 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s199ms).
+2019-10-11 16:57:33.122 DEBUG 9001 --- [http-nio-8087-exec-5] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 16:57:33.122 DEBUG 9001 --- [http-nio-8087-exec-5] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 2(Integer)
+2019-10-11 16:57:33.123 DEBUG 9001 --- [http-nio-8087-exec-5] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 0
+2019-10-11 17:03:24.069 DEBUG 9001 --- [http-nio-8087-exec-8] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 17:03:24.075 DEBUG 9001 --- [http-nio-8087-exec-8] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 2(Integer)
+2019-10-11 17:03:24.076 DEBUG 9001 --- [http-nio-8087-exec-8] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 0
+2019-10-11 17:21:15.866  WARN 9001 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m17s989ms).
+2019-10-11 17:21:43.127 DEBUG 9001 --- [http-nio-8087-exec-9] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
+2019-10-11 17:21:43.127 DEBUG 9001 --- [http-nio-8087-exec-9] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
+2019-10-11 17:21:43.132 DEBUG 9001 --- [http-nio-8087-exec-9] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 3
+2019-10-11 17:21:48.013 DEBUG 9001 --- [http-nio-8087-exec-10] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 17:21:48.014 DEBUG 9001 --- [http-nio-8087-exec-10] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 2(Integer)
+2019-10-11 17:21:48.014 DEBUG 9001 --- [http-nio-8087-exec-10] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 0
+2019-10-11 17:22:01.301 DEBUG 9001 --- [http-nio-8087-exec-1] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 17:22:01.301 DEBUG 9001 --- [http-nio-8087-exec-1] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 3(Integer)
+2019-10-11 17:22:01.303 DEBUG 9001 --- [http-nio-8087-exec-1] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 1

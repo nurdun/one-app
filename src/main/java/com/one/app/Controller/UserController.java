@@ -1,13 +1,16 @@
 package com.one.app.Controller;
 
 import java.lang.Object;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.one.app.Service.UserService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import com.one.app.Model.User;
@@ -21,26 +24,35 @@ public class UserController {
 
     @CrossOrigin
     @RequestMapping("/users")
+    @ResponseBody
     public List<User> getUsers(){
-        return userService.getUsers();
+        List<User> result = new ArrayList<User>();
+        result =  userService.getUsers();
+        return result;
     }
 
     @RequestMapping(method = POST,value = "/getuser")
+    @ResponseBody
     public User getUserById(int userId){
-        return userService.getUserById(userId);
+        User user = new User();
+        user =  userService.getUserById(userId);
+        return user;
     }
 
     @RequestMapping(method = POST,value = "/adduser")
+    @ResponseBody
     public String addUser(User user){
         return userService.addUser(user);
     }
 
     @RequestMapping(method = POST,value = "/updateuser")
+    @ResponseBody
     public int updateUser(User user){
         return userService.updateUser(user);
     }
 
     @RequestMapping(method = POST,value = "/deleteuser")
+    @ResponseBody
     public String addUser(int userId){
         return userService.deleteUserById(userId);
     }

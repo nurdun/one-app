@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
 
-//    @Select("select * from users where userId = #{userId}")
+//   @Select("select * from users where userId = #{userId}")
     User getUserById(int userId);
 
 //    @Select("select * from users")
