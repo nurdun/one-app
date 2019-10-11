@@ -1,392 +1,67 @@
-2019-10-09 11:30:31.198  INFO 3683 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 3683 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
-2019-10-09 11:30:31.202  INFO 3683 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
-2019-10-09 11:30:32.212  INFO 3683 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-09 11:30:32.213  INFO 3683 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-10-09 11:30:32.288  INFO 3683 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-09 11:30:33.644  INFO 3683 --- [main] com.one.app.App                          : Started App in 2.818 seconds (JVM running for 3.424)
-2019-10-09 11:30:33.646  INFO 3683 --- [main] com.one.app.App                          : StartApplication...
-2019-10-09 11:30:36.049  INFO 3683 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-10-09 11:30:36.593  INFO 3683 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-10-09 11:30:41.484  INFO 3683 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-09 11:30:41.545 ERROR 3683 --- [http-nio-8087-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-
-java.lang.NullPointerException: null
-	at com.one.app.Service.UserService.getUsers(UserService.java:24) ~[classes/:na]
-	at com.one.app.Controller.UserController.getUsers(UserController.java:23) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-
-2019-10-09 11:31:54.948  WARN 3683 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s252ms).
-2019-10-09 11:31:54.950 ERROR 3683 --- [http-nio-8087-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-
-java.lang.NullPointerException: null
-	at com.one.app.Service.UserService.getUsers(UserService.java:24) ~[classes/:na]
-	at com.one.app.Controller.UserController.getUsers(UserController.java:23) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109) ~[spring-web-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.21.jar:9.0.21]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
-
-2019-10-09 11:31:55.017  INFO 3683 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-10-09 11:31:55.028  INFO 3683 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2019-10-09 11:31:58.703  INFO 3706 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 3706 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
-2019-10-09 11:31:58.706  INFO 3706 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
-2019-10-09 11:31:59.787  INFO 3706 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-09 11:31:59.788  INFO 3706 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-10-09 11:31:59.865  INFO 3706 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-09 11:32:32.215  INFO 3713 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 3713 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
-2019-10-09 11:32:32.220  INFO 3713 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
-2019-10-09 11:32:33.210  INFO 3713 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-09 11:32:33.211  INFO 3713 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-10-09 11:32:33.285  INFO 3713 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-09 11:32:43.300  INFO 3721 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 3721 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
-2019-10-09 11:32:43.303  INFO 3721 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
-2019-10-09 11:32:44.366  INFO 3721 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-09 11:32:44.366  INFO 3721 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-10-09 11:32:44.449  INFO 3721 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-09 11:33:56.912  INFO 3721 --- [main] com.one.app.App                          : Started App in 73.957 seconds (JVM running for 74.619)
-2019-10-09 11:33:57.174  INFO 3721 --- [main] com.one.app.App                          : StartApplication...
-2019-10-09 11:34:03.601  INFO 3721 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-10-09 11:34:16.463  INFO 3721 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-09 11:35:12.761 ERROR 3721 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
-
-com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) [HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) [HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-3.2.0.jar:na]
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157) [spring-jdbc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) [spring-jdbc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) [spring-jdbc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:370) [spring-jdbc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:417) [spring-jdbc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at com.one.app.App.run(App.java:40) [classes/:na]
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:763) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at com.one.app.App.main(App.java:25) [classes/:na]
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_172]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_172]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_172]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_172]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeProtocol.negotiateSSLConnection(NativeProtocol.java:361) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.negotiateSSLConnection(NativeAuthenticationProvider.java:777) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:486) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:202) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1452) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:165) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	... 22 common frames omitted
-Caused by: javax.net.ssl.SSLException: Unsupported record version Unknown-0.0
-	at sun.security.ssl.InputRecord.checkRecordVersion(InputRecord.java:552) ~[na:1.8.0_172]
-	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:565) ~[na:1.8.0_172]
-	at sun.security.ssl.InputRecord.read(InputRecord.java:529) ~[na:1.8.0_172]
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983) ~[na:1.8.0_172]
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385) ~[na:1.8.0_172]
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413) ~[na:1.8.0_172]
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397) ~[na:1.8.0_172]
-	at com.mysql.cj.protocol.ExportControlled.performTlsHandshake(ExportControlled.java:316) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.StandardSocketFactory.performTlsHandshake(StandardSocketFactory.java:188) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeSocketConnection.performTlsHandshake(NativeSocketConnection.java:99) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeProtocol.negotiateSSLConnection(NativeProtocol.java:352) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	... 29 common frames omitted
-
-2019-10-09 11:35:12.858  INFO 3721 --- [http-nio-8087-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-10-09 11:35:15.038 ERROR 3721 --- [main] o.s.boot.SpringApplication               : Application run failed
-
-java.lang.IllegalStateException: Failed to execute CommandLineRunner
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:782) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:763) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at com.one.app.App.main(App.java:25) [classes/:na]
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81) ~[spring-jdbc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:370) ~[spring-jdbc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:417) ~[spring-jdbc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at com.one.app.App.run(App.java:40) [classes/:na]
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	... 5 common frames omitted
-Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.2.0.jar:na]
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157) ~[spring-jdbc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	... 9 common frames omitted
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_172]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_172]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_172]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_172]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeProtocol.negotiateSSLConnection(NativeProtocol.java:361) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.negotiateSSLConnection(NativeAuthenticationProvider.java:777) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:486) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:202) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1452) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:165) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	... 22 common frames omitted
-Caused by: javax.net.ssl.SSLException: Unsupported record version Unknown-0.0
-	at sun.security.ssl.InputRecord.checkRecordVersion(InputRecord.java:552) ~[na:1.8.0_172]
-	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:565) ~[na:1.8.0_172]
-	at sun.security.ssl.InputRecord.read(InputRecord.java:529) ~[na:1.8.0_172]
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:983) ~[na:1.8.0_172]
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385) ~[na:1.8.0_172]
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413) ~[na:1.8.0_172]
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397) ~[na:1.8.0_172]
-	at com.mysql.cj.protocol.ExportControlled.performTlsHandshake(ExportControlled.java:316) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.StandardSocketFactory.performTlsHandshake(StandardSocketFactory.java:188) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeSocketConnection.performTlsHandshake(NativeSocketConnection.java:99) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.protocol.a.NativeProtocol.negotiateSSLConnection(NativeProtocol.java:352) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	... 29 common frames omitted
-
-2019-10-09 11:35:22.474  INFO 3721 --- [http-nio-8087-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-10-09 11:36:23.339  INFO 3760 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 3760 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
-2019-10-09 11:36:23.342  INFO 3760 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
-2019-10-09 11:36:24.400  INFO 3760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-09 11:36:24.401  INFO 3760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-10-09 11:36:24.472  INFO 3760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-09 11:37:35.603  INFO 3760 --- [main] com.one.app.App                          : Started App in 72.606 seconds (JVM running for 73.31)
-2019-10-09 11:37:35.850  INFO 3760 --- [main] com.one.app.App                          : StartApplication...
-2019-10-09 11:39:15.221  INFO 3760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-10-09 11:40:07.048  INFO 3807 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 3807 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
-2019-10-09 11:40:07.051  INFO 3807 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
-2019-10-09 11:40:08.015  INFO 3807 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-09 11:40:08.016  INFO 3807 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-10-09 11:40:08.090  INFO 3807 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-09 11:41:01.692  INFO 3807 --- [main] com.one.app.App                          : Started App in 55.041 seconds (JVM running for 55.724)
-2019-10-09 11:41:01.695  INFO 3807 --- [main] com.one.app.App                          : StartApplication...
-2019-10-09 11:41:08.199  INFO 3807 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-10-09 11:41:08.843  INFO 3807 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-10-09 11:41:16.090  INFO 3807 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-09 14:45:03.201  INFO 3807 --- [Thread-72] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-10-09 14:45:03.211  INFO 3807 --- [Thread-72] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2019-10-09 14:45:07.865  INFO 6429 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 6429 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
-2019-10-09 14:45:07.868  INFO 6429 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
-2019-10-09 14:45:08.761  INFO 6429 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-09 14:45:08.761  INFO 6429 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-10-09 14:45:08.845  INFO 6429 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-09 14:45:09.607  INFO 6429 --- [main] com.one.app.App                          : Started App in 2.145 seconds (JVM running for 3.116)
-2019-10-09 14:45:09.609  INFO 6429 --- [main] com.one.app.App                          : StartApplication...
-2019-10-09 14:45:12.108  INFO 6429 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-10-09 14:45:12.467  INFO 6429 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-10-09 14:45:30.076  INFO 6429 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-09 14:45:30.118 DEBUG 6429 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
-2019-10-09 14:45:30.134 DEBUG 6429 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
-2019-10-09 14:45:30.155 DEBUG 6429 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 1
-2019-10-09 14:45:54.988  INFO 6429 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-10-09 14:45:54.999  INFO 6429 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2019-10-09 14:45:57.837  INFO 6447 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 6447 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
-2019-10-09 14:45:57.840  INFO 6447 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
-2019-10-09 14:45:58.839  INFO 6447 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-09 14:45:58.839  INFO 6447 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-10-09 14:45:58.919  INFO 6447 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-09 14:45:59.645  INFO 6447 --- [main] com.one.app.App                          : Started App in 2.172 seconds (JVM running for 2.807)
-2019-10-09 14:45:59.646  INFO 6447 --- [main] com.one.app.App                          : StartApplication...
-2019-10-09 14:46:03.028  INFO 6447 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-10-09 14:46:03.405  INFO 6447 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-10-09 14:46:09.981  INFO 6447 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-09 14:46:10.016 DEBUG 6447 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
-2019-10-09 14:46:10.032 DEBUG 6447 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
-2019-10-09 14:46:10.054 DEBUG 6447 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 1
-2019-10-09 14:46:37.853  INFO 6447 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-10-09 14:46:37.866  INFO 6447 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2019-10-09 14:52:07.393  INFO 6527 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 6527 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
-2019-10-09 14:52:07.397  INFO 6527 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
-2019-10-09 14:52:08.428  INFO 6527 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-09 14:52:08.428  INFO 6527 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-10-09 14:52:08.508  INFO 6527 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-09 14:52:09.236  INFO 6527 --- [main] com.one.app.App                          : Started App in 2.189 seconds (JVM running for 2.771)
-2019-10-09 14:52:09.237  INFO 6527 --- [main] com.one.app.App                          : StartApplication...
-2019-10-09 14:52:11.855  INFO 6527 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-10-09 14:52:12.218  INFO 6527 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-10-09 14:52:22.876  INFO 6527 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-09 14:52:22.911 DEBUG 6527 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
-2019-10-09 14:52:22.928 DEBUG 6527 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
-2019-10-09 14:52:22.950 DEBUG 6527 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 1
-2019-10-09 15:50:23.215  INFO 6527 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-10-09 15:50:23.222  INFO 6527 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2019-10-09 15:50:27.343  INFO 7389 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 7389 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
-2019-10-09 15:50:27.347  INFO 7389 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
-2019-10-09 15:50:28.336  INFO 7389 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-09 15:50:28.337  INFO 7389 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-10-09 15:50:28.415  INFO 7389 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-09 15:50:29.158  INFO 7389 --- [main] com.one.app.App                          : Started App in 2.219 seconds (JVM running for 3.142)
-2019-10-09 15:50:29.160  INFO 7389 --- [main] com.one.app.App                          : StartApplication...
-2019-10-09 15:50:34.289  INFO 7389 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-10-09 15:50:34.660  INFO 7389 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-10-09 15:53:31.951  INFO 7389 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-09 15:53:31.992 DEBUG 7389 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
-2019-10-09 15:53:32.007 DEBUG 7389 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
-2019-10-09 15:53:32.025 DEBUG 7389 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 1
-2019-10-09 16:01:00.757 DEBUG 7389 --- [http-nio-8087-exec-5] com.one.app.Mapper.UserMapper.addtUser   : ==>  Preparing: insert into users (userId,userName,gender,age) values (?,?,?,?) 
-2019-10-09 16:01:00.758 DEBUG 7389 --- [http-nio-8087-exec-5] com.one.app.Mapper.UserMapper.addtUser   : ==> Parameters: 0(Integer), "Jason"(String), "male"(String), 100(Integer)
-2019-10-09 16:01:00.761 DEBUG 7389 --- [http-nio-8087-exec-5] com.one.app.Mapper.UserMapper.addtUser   : <==    Updates: 1
-2019-10-09 16:01:09.126 DEBUG 7389 --- [http-nio-8087-exec-6] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
-2019-10-09 16:01:09.127 DEBUG 7389 --- [http-nio-8087-exec-6] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
-2019-10-09 16:01:09.128 DEBUG 7389 --- [http-nio-8087-exec-6] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 2
-2019-10-09 16:01:52.291  INFO 7389 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-10-09 16:01:52.303  INFO 7389 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2019-10-09 16:01:55.801  INFO 7529 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 7529 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
-2019-10-09 16:01:55.804  INFO 7529 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
-2019-10-09 16:01:56.891  INFO 7529 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-09 16:01:56.891  INFO 7529 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-10-09 16:01:56.975  INFO 7529 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-09 16:01:57.718  INFO 7529 --- [main] com.one.app.App                          : Started App in 2.252 seconds (JVM running for 2.86)
-2019-10-09 16:01:57.719  INFO 7529 --- [main] com.one.app.App                          : StartApplication...
-2019-10-09 16:01:57.721  INFO 7529 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-10-09 16:01:58.048  INFO 7529 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-10-09 16:02:06.135  INFO 7529 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-09 16:02:06.193 DEBUG 7529 --- [http-nio-8087-exec-2] com.one.app.Mapper.UserMapper.addUser    : ==>  Preparing: insert into users (userName,gender,age) values (?,?,?) 
-2019-10-09 16:02:06.213 DEBUG 7529 --- [http-nio-8087-exec-2] com.one.app.Mapper.UserMapper.addUser    : ==> Parameters: naruto(String), male(String), 111(Integer)
-2019-10-09 16:02:06.215 DEBUG 7529 --- [http-nio-8087-exec-2] com.one.app.Mapper.UserMapper.addUser    : <==    Updates: 1
-2019-10-09 16:02:12.968 DEBUG 7529 --- [http-nio-8087-exec-3] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
-2019-10-09 16:02:12.969 DEBUG 7529 --- [http-nio-8087-exec-3] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
-2019-10-09 16:02:12.990 DEBUG 7529 --- [http-nio-8087-exec-3] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 3
+2019-10-11 05:23:37.804  WARN 23256 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11h49m6s37ms).
+2019-10-11 13:58:12.396  INFO 6698 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 6698 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
+2019-10-11 13:58:12.399  INFO 6698 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
+2019-10-11 13:58:13.575  INFO 6698 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 13:58:13.575  INFO 6698 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-11 13:58:13.683  INFO 6698 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 13:58:14.903  INFO 6698 --- [main] com.one.app.App                          : Started App in 2.962 seconds (JVM running for 4.625)
+2019-10-11 13:58:14.908  INFO 6698 --- [main] com.one.app.App                          : StartApplication...
+2019-10-11 13:58:14.914  INFO 6698 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 13:58:15.269  INFO 6698 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 13:58:47.805  INFO 6698 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 13:58:57.180 DEBUG 6698 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 13:58:57.204 DEBUG 6698 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 2(Integer)
+2019-10-11 13:58:57.232 DEBUG 6698 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 0
+2019-10-11 14:09:43.876  INFO 6698 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-11 14:09:43.881  INFO 6698 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-11 14:09:48.557  INFO 6925 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 6925 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
+2019-10-11 14:09:48.560  INFO 6925 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
+2019-10-11 14:09:49.551  INFO 6925 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 14:09:49.552  INFO 6925 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-11 14:09:49.627  INFO 6925 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 14:09:50.666  INFO 6925 --- [main] com.one.app.App                          : Started App in 2.474 seconds (JVM running for 3.057)
+2019-10-11 14:09:50.667  INFO 6925 --- [main] com.one.app.App                          : StartApplication...
+2019-10-11 14:09:50.670  INFO 6925 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 14:09:50.923  INFO 6925 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 14:11:27.857  INFO 6925 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 14:11:29.802 DEBUG 6925 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 14:11:29.819 DEBUG 6925 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 2(Integer)
+2019-10-11 14:11:29.836 DEBUG 6925 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 0
+2019-10-11 14:11:39.084 DEBUG 6925 --- [http-nio-8087-exec-3] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
+2019-10-11 14:11:39.085 DEBUG 6925 --- [http-nio-8087-exec-3] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
+2019-10-11 14:11:39.093 DEBUG 6925 --- [http-nio-8087-exec-3] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 2
+2019-10-11 14:12:29.347 DEBUG 6925 --- [http-nio-8087-exec-5] com.one.app.Mapper.UserMapper.addUser    : ==>  Preparing: insert into users((userName,gender,age) values (?,?,?) 
+2019-10-11 14:12:29.347 DEBUG 6925 --- [http-nio-8087-exec-5] com.one.app.Mapper.UserMapper.addUser    : ==> Parameters: Mary(String), female(String), 20(Integer)
+2019-10-11 14:13:03.819  INFO 6925 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-11 14:13:03.822  INFO 6925 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-11 14:13:06.662  INFO 6967 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 6967 (/Users/nsamat/Documents/myWorkSpace/Java/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/Java/one-app)
+2019-10-11 14:13:06.665  INFO 6967 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
+2019-10-11 14:13:07.692  INFO 6967 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-11 14:13:07.692  INFO 6967 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-11 14:13:07.774  INFO 6967 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-11 14:13:08.805  INFO 6967 --- [main] com.one.app.App                          : Started App in 2.492 seconds (JVM running for 3.099)
+2019-10-11 14:13:08.806  INFO 6967 --- [main] com.one.app.App                          : StartApplication...
+2019-10-11 14:13:08.809  INFO 6967 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-11 14:13:09.064  INFO 6967 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-11 14:13:31.517  INFO 6967 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-11 14:13:31.575 DEBUG 6967 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.addUser    : ==>  Preparing: insert into users(userName,gender,age) values (?,?,?) 
+2019-10-11 14:13:31.594 DEBUG 6967 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.addUser    : ==> Parameters: Mary(String), female(String), 20(Integer)
+2019-10-11 14:13:31.603 DEBUG 6967 --- [http-nio-8087-exec-1] com.one.app.Mapper.UserMapper.addUser    : <==    Updates: 1
+2019-10-11 14:13:41.189 DEBUG 6967 --- [http-nio-8087-exec-3] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
+2019-10-11 14:13:41.190 DEBUG 6967 --- [http-nio-8087-exec-3] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
+2019-10-11 14:13:41.212 DEBUG 6967 --- [http-nio-8087-exec-3] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 3
+2019-10-11 14:17:11.401 DEBUG 6967 --- [http-nio-8087-exec-8] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
+2019-10-11 14:17:11.407 DEBUG 6967 --- [http-nio-8087-exec-8] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
+2019-10-11 14:17:11.409 DEBUG 6967 --- [http-nio-8087-exec-8] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 3
+2019-10-11 14:17:27.146 DEBUG 6967 --- [http-nio-8087-exec-9] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 14:17:27.148 DEBUG 6967 --- [http-nio-8087-exec-9] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 1(Integer)
+2019-10-11 14:17:27.150 DEBUG 6967 --- [http-nio-8087-exec-9] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 1
+2019-10-11 14:17:37.495 DEBUG 6967 --- [http-nio-8087-exec-10] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 14:17:37.501 DEBUG 6967 --- [http-nio-8087-exec-10] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 2(Integer)
+2019-10-11 14:17:37.502 DEBUG 6967 --- [http-nio-8087-exec-10] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 0
+2019-10-11 14:17:52.966 DEBUG 6967 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 14:17:52.973 DEBUG 6967 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 3(Integer)
+2019-10-11 14:17:52.975 DEBUG 6967 --- [http-nio-8087-exec-2] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 1
+2019-10-11 14:18:07.659 DEBUG 6967 --- [http-nio-8087-exec-1] c.one.app.Mapper.UserMapper.getUserById  : ==>  Preparing: select * from users where userId = ? 
+2019-10-11 14:18:07.659 DEBUG 6967 --- [http-nio-8087-exec-1] c.one.app.Mapper.UserMapper.getUserById  : ==> Parameters: 4(Integer)
+2019-10-11 14:18:07.661 DEBUG 6967 --- [http-nio-8087-exec-1] c.one.app.Mapper.UserMapper.getUserById  : <==      Total: 1

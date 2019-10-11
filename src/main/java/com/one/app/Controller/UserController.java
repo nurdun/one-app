@@ -25,8 +25,23 @@ public class UserController {
         return userService.getUsers();
     }
 
+    @RequestMapping(method = POST,value = "/getuser")
+    public User getUserById(int userId){
+        return userService.getUserById(userId);
+    }
+
     @RequestMapping(method = POST,value = "/adduser")
     public String addUser(User user){
         return userService.addUser(user);
+    }
+
+    @RequestMapping(method = POST,value = "/updateuser")
+    public int updateUser(User user){
+        return userService.updateUser(user);
+    }
+
+    @RequestMapping(method = POST,value = "/deleteuser")
+    public String addUser(int userId){
+        return userService.deleteUserById(userId);
     }
  }
