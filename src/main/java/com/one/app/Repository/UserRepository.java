@@ -1,4 +1,4 @@
-package com.one.app.DAO;
+package com.one.app.Repository;
 
 import com.one.app.POJO.User;
 
@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UserDao {
+public class UserRepository {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
