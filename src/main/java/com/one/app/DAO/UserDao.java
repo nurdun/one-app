@@ -1,6 +1,6 @@
 package com.one.app.DAO;
 
-import com.one.app.Model.User;
+import com.one.app.POJO.User;
 
 import java.util.List;
 

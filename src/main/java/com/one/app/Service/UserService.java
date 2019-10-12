@@ -1,12 +1,11 @@
 package com.one.app.Service;
 
-import com.one.app.Model.User;
+import com.one.app.POJO.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-import com.one.app.DAO.UserDao;
 import com.one.app.Mapper.UserMapper;
 import com.one.app.Util.RestService;
 
@@ -26,7 +25,7 @@ public class UserService extends RestService {
     }
 
     public List<User> getUsers(){
-        return userMapper.getUsers();
+       return userMapper.getUsers();
     }
 
     public  String addUser(User user){
@@ -40,7 +39,7 @@ public class UserService extends RestService {
     }
 
     public int updateUser(User user){
-        return userMapper.updateUser(user);
+       return userMapper.updateUser(user);
     }
 
     public String deleteUserById (int userId){

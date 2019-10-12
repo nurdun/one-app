@@ -1,6 +1,7 @@
-package com.one.app.Model;
+package com.one.app.POJO;
 
 
+import java.util.UUID;
 
 public class User {
     private int userId;

@@ -1,6 +1,6 @@
 package com.one.app.Mapper;
 
-import com.one.app.Model.User;
+import com.one.app.POJO.User;
 import org.apache.ibatis.annotations.*;
 
 
@@ -8,6 +8,8 @@ import java.util.List;
 
 @Mapper
 public interface UserMapper {
+
+//    void creatTableNotExist();
 
 //   @Select("select * from users where userId = #{userId}")
     User getUserById(int userId);
