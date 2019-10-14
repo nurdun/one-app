@@ -1,6 +1,6 @@
 package com.one.app.Service;
 
-import com.one.app.Model.BuyerEntity;
+import com.one.app.Entity.BuyerEntity;
 import com.one.app.Repository.BuyerRepository;
 import com.one.app.Util.RestService;
 import org.springframework.beans.factory.annotation.Autowired;
