@@ -1,1 +1,108 @@
-2019-10-14 08:54:48.618  WARN 18205 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d13h37m44s654ms).
+2020-04-08 05:24:59.368  WARN 5992 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h55m34s871ms).
+2020-04-08 07:30:13.208  WARN 5992 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h5m13s924ms).
+2020-04-08 08:08:10.116  WARN 5992 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m56s909ms).
+2020-04-08 08:46:14.829  INFO 5992 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-08 08:46:15.195 DEBUG 5992 --- [http-nio-8088-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==>  Preparing: select * from users 
+2020-04-08 08:46:15.238 DEBUG 5992 --- [http-nio-8088-exec-1] com.one.app.Mapper.UserMapper.getUsers   : ==> Parameters: 
+2020-04-08 08:46:15.280 DEBUG 5992 --- [http-nio-8088-exec-1] com.one.app.Mapper.UserMapper.getUsers   : <==      Total: 0
+2020-04-08 08:46:24.763  INFO 5992 --- [http-nio-8088-exec-4] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-04-08 08:47:49.235  INFO 5992 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-08 08:47:49.241  INFO 5992 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-08 08:47:55.083  INFO 7936 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 7936 (/Users/nsamat/Documents/myWorkSpace/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/one-app)
+2020-04-08 08:47:55.086  INFO 7936 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
+2020-04-08 08:47:56.596  INFO 7936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-08 08:47:56.597  INFO 7936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-04-08 08:47:56.718  INFO 7936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-08 08:47:56.923  INFO 7936 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-08 08:47:57.061  INFO 7936 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-04-08 08:47:57.062  INFO 7936 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-04-08 08:47:57.350  INFO 7936 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-04-08 08:47:57.549  INFO 7936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-08 08:47:57.704  INFO 7936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-08 08:47:57.720  INFO 7936 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-08 08:48:00.100  WARN 7936 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-08 08:48:00.268  INFO 7936 --- [main] com.one.app.App                          : Started App in 5.666 seconds (JVM running for 6.835)
+2020-04-08 08:48:00.269  INFO 7936 --- [main] com.one.app.App                          : StartApplication...
+2020-04-08 08:48:16.739  INFO 7936 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-08 08:48:16.742  INFO 7936 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-08 08:48:21.114  INFO 7954 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 7954 (/Users/nsamat/Documents/myWorkSpace/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/one-app)
+2020-04-08 08:48:21.116  INFO 7954 --- [main] com.one.app.App                          : The following profiles are active: dev
+2020-04-08 08:48:22.296  INFO 7954 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-08 08:48:22.296  INFO 7954 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-04-08 08:48:22.389  INFO 7954 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-08 08:48:22.583  INFO 7954 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-08 08:48:22.644  INFO 7954 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-04-08 08:48:22.645  INFO 7954 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-04-08 08:48:22.842  INFO 7954 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-04-08 08:48:22.941  INFO 7954 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-08 08:48:22.942  WARN 7954 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-08 08:48:23.088  INFO 7954 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-08 08:48:23.097  INFO 7954 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-08 08:48:24.927  WARN 7954 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-08 08:48:25.070  INFO 7954 --- [main] com.one.app.App                          : Started App in 4.258 seconds (JVM running for 4.77)
+2020-04-08 08:48:25.072  INFO 7954 --- [main] com.one.app.App                          : StartApplication...
+2020-04-08 08:53:01.935  INFO 7954 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-08 08:53:01.942  INFO 7954 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-08 08:53:04.637  INFO 8091 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 8091 (/Users/nsamat/Documents/myWorkSpace/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/one-app)
+2020-04-08 08:53:04.640  INFO 8091 --- [main] com.one.app.App                          : No active profile set, falling back to default profiles: default
+2020-04-08 08:53:06.015  INFO 8091 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-08 08:53:06.015  INFO 8091 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-04-08 08:53:06.107  INFO 8091 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-08 08:53:06.267  INFO 8091 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-08 08:53:06.350  INFO 8091 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-04-08 08:53:06.351  INFO 8091 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-04-08 08:53:06.537  INFO 8091 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-04-08 08:53:06.658  INFO 8091 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-08 08:53:06.752  INFO 8091 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-08 08:53:06.764  INFO 8091 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-08 08:53:08.654  WARN 8091 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-08 08:53:08.829  INFO 8091 --- [main] com.one.app.App                          : Started App in 4.611 seconds (JVM running for 5.372)
+2020-04-08 08:53:08.831  INFO 8091 --- [main] com.one.app.App                          : StartApplication...
+2020-04-08 08:54:36.944  INFO 8091 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-08 08:54:36.948  INFO 8091 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-08 08:54:40.327  INFO 8143 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 8143 (/Users/nsamat/Documents/myWorkSpace/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/one-app)
+2020-04-08 08:54:40.331  INFO 8143 --- [main] com.one.app.App                          : The following profiles are active: dev
+2020-04-08 08:54:42.057  INFO 8143 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-08 08:54:42.057  INFO 8143 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-04-08 08:54:42.145  INFO 8143 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-08 08:54:42.329  INFO 8143 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-08 08:54:42.405  INFO 8143 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-04-08 08:54:42.406  INFO 8143 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-04-08 08:54:42.587  INFO 8143 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-04-08 08:54:42.709  INFO 8143 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-08 08:54:42.710  WARN 8143 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-08 08:54:42.814  INFO 8143 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-08 08:54:42.825  INFO 8143 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-08 08:54:44.619  WARN 8143 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-08 08:54:44.789  INFO 8143 --- [main] com.one.app.App                          : Started App in 5.002 seconds (JVM running for 6.336)
+2020-04-08 08:54:44.790  INFO 8143 --- [main] com.one.app.App                          : StartApplication...
+2020-04-08 08:55:03.891  INFO 8143 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-08 08:55:03.964  INFO 8143 --- [http-nio-8088-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-04-08 09:03:49.380  INFO 8143 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-08 09:03:49.390  INFO 8143 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-08 09:03:51.128  INFO 9621 --- [main] com.one.app.App                          : Starting App on LM-SHC-16503063 with PID 9621 (/Users/nsamat/Documents/myWorkSpace/one-app/target/classes started by nsamat in /Users/nsamat/Documents/myWorkSpace/one-app)
+2020-04-08 09:03:51.132  INFO 9621 --- [main] com.one.app.App                          : The following profiles are active: dev
+2020-04-08 09:03:52.457  INFO 9621 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-08 09:03:52.457  INFO 9621 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-04-08 09:03:52.550  INFO 9621 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-08 09:03:52.704  INFO 9621 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-08 09:03:52.762  INFO 9621 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-04-08 09:03:52.763  INFO 9621 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-04-08 09:03:52.969  INFO 9621 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-04-08 09:03:53.078  INFO 9621 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-08 09:03:53.079  WARN 9621 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-04-08 09:03:53.181  INFO 9621 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-08 09:03:53.190  INFO 9621 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-08 09:03:54.852  WARN 9621 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-08 09:03:55.046  INFO 9621 --- [main] com.one.app.App                          : Started App in 4.297 seconds (JVM running for 4.988)
+2020-04-08 09:03:55.047  INFO 9621 --- [main] com.one.app.App                          : StartApplication...
