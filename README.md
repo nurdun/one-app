@@ -9,16 +9,16 @@
 3.mvn spring-boot:run -Drun.jvmArguments="-Dspring.profiles.active=dev" <br/>
 
 4. pom.xml config <br/>
-`<plugins> 
-    <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <configuration>
-            <profiles>
-                <profile>dev</profile>
-            </profiles>
-        </configuration>
-    </plugin>
-    ...
-</plugins>`<br/>
+`<plugins>` <br/>
+    `<plugin>`<br/>
+        `<groupId>org.springframework.boot</groupId>`<br/>
+        `<artifactId>spring-boot-maven-plugin</artifactId>`<br/>
+        `<configuration>`<br/>
+            `<profiles>`<br/>
+                `<profile>dev</profile>`<br/>
+            `</profiles>`<br/>
+        `</configuration>`<br/>
+    `</plugin>`<br/>
+    ...<br/>
+`</plugins>`<br/>
 then mvn spring-boot:run
