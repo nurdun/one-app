@@ -2,7 +2,7 @@
 
 #Active Spring profiles by below several methods
 
-1.vm options -Dspring.profiles.active=dev< br/>
+1.vm options -Dspring.profiles.active=dev <br/>
 
 2.application.properties spring.profiles.active=dev <br/>
 
