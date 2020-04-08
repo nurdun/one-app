@@ -8,8 +8,8 @@
 
 3.mvn spring-boot:run -Drun.jvmArguments="-Dspring.profiles.active=dev" <br/>
 
-4. pom.xml config
-`<plugins>
+4. pom.xml config <br/>
+`<plugins> 
     <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
@@ -20,5 +20,5 @@
         </configuration>
     </plugin>
     ...
-</plugins>`
+</plugins>`<br/>
 then mvn spring-boot:run
