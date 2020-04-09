@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
 
-//    void creatTableNotExist();
+    void creatTableNotExist();
 
 //   @Select("select * from users where userId = #{userId}")
     User getUserById(String userId);

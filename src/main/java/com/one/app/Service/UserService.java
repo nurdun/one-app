@@ -21,15 +21,18 @@ public class UserService extends RestService {
 //    }
 
     public User getUserById(String userId){
+        userTableIntialize();
         return userMapper.getUserById(userId);
     }
 
     public List<User> getUsers(){
-       return userMapper.getUsers();
+        userTableIntialize();
+        return userMapper.getUsers();
     }
 
     public  String addUser(User user){
         try{
+            userTableIntialize();
 //            String result = "Succeed";
             userMapper.addUser(user);
             return addSucceed;
@@ -39,15 +42,22 @@ public class UserService extends RestService {
     }
 
     public int updateUser(User user){
+        userTableIntialize();
        return userMapper.updateUser(user);
     }
 
     public String deleteUserById (String userId){
         try {
+            userTableIntialize();
             userMapper.deleteUserById(userId);
             return deleteSucceed;
         }catch (Exception err){
             return err.toString();
         }
+    }
+
+
+    public void userTableIntialize(){
+        userMapper.creatTableNotExist();
     }
 }

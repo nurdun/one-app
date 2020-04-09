@@ -3,15 +3,20 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.one.app.Mapper.UserMapper">
-    <!--<update id="creatTableNotExist">-->
-         <!--CREATE  TABLE IF NOT EXISTS users-->
-          <!--(userId int NOT NULL AUTO_INCREMENT,-->
-              <!--userName varchar(255) NOT NULL,-->
-              <!--gender varchar(255),-->
-              <!--Age int,-->
-              <!--PRIMARY KEY (userId)-->
-          <!--)-->
-    <!--</update>-->
+    <update id="creatTableNotExist">
+        CREATE  TABLE IF NOT EXISTS users
+        (
+            userId varchar(255) NOT NULL,
+            userName varchar(255) NOT NULL,
+            email varchar(255) NOT NULL,
+            country varchar(255) NOT NULL,
+            gender varchar(255),
+            Age int,
+            createTime Timestamp,
+            updateTime Timestamp,
+            PRIMARY KEY (userId)
+        )
+    </update>
     <select id="getUserById" resultType="com.one.app.POJO.User">
       select * from users where userId = #{userId}
      </select>

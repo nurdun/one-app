@@ -29,18 +29,18 @@ public class App implements CommandLineRunner
     public void run(String... strings) {
         log.info("StartApplication...");
 
-       String usersTableSql =  "CREATE  TABLE IF NOT EXISTS users" +
-               "(userId varchar(255) NOT NULL," +
-               "userName varchar(255) NOT NULL," +
-               "email varchar(255) NOT NULL,"+
-               "country varchar(255) NOT NULL,"+
-               "gender varchar(255)," +
-               "Age int," +
-               "createTime Timestamp, "+
-               "updateTime Timestamp, "+
-               "PRIMARY KEY (userId)" +
-               ")";
-
-       jdbcTemplate.execute(usersTableSql);
+//       String usersTableSql =  "CREATE  TABLE IF NOT EXISTS users" +
+//               "(userId varchar(255) NOT NULL," +
+//               "userName varchar(255) NOT NULL," +
+//               "email varchar(255) NOT NULL,"+
+//               "country varchar(255) NOT NULL,"+
+//               "gender varchar(255)," +
+//               "Age int," +
+//               "createTime Timestamp, "+
+//               "updateTime Timestamp, "+
+//               "PRIMARY KEY (userId)" +
+//               ")";
+//
+//       jdbcTemplate.execute(usersTableSql);
     }
 }
