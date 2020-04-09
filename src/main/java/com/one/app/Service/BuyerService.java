@@ -29,6 +29,7 @@ public class BuyerService extends RestService {
             newBuyer.setBuyerName(buyer.getBuyerName());
             newBuyer.setEmail(buyer.getEmail());
             newBuyer.setCountry(buyer.getCountry());
+            newBuyer.setUpdateTime(buyer.getUpdateTime());
             buyerRepository.save(newBuyer);
             return buyer.getBuyerId().toString();
         }catch (Exception err){

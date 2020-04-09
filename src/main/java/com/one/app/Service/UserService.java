@@ -20,7 +20,7 @@ public class UserService extends RestService {
 //        return userDao.getUsers();
 //    }
 
-    public User getUserById(int userId){
+    public User getUserById(String userId){
         return userMapper.getUserById(userId);
     }
 
@@ -42,7 +42,7 @@ public class UserService extends RestService {
        return userMapper.updateUser(user);
     }
 
-    public String deleteUserById (int userId){
+    public String deleteUserById (String userId){
         try {
             userMapper.deleteUserById(userId);
             return deleteSucceed;

@@ -19,12 +19,18 @@
       select * from users
      </select>
     <insert id="addUser" parameterType="com.one.app.POJO.User">
-      insert into users(userName,gender,age) values (#{userName},#{gender},#{age})
+        <selectKey keyProperty="userId" resultType="String" order="BEFORE">
+            select replace(uuid(),'-','') from dual
+        </selectKey>
+      insert into users(userId,userName,email,country,gender,age,createTime,updateTime)
+      values (#{userId,jdbcType=VARCHAR},#{userName},#{email},#{country},#{gender},#{age},#{createTime},#{updateTime})
     </insert>
     <update id="updateUser" parameterType="com.one.app.POJO.User">
-        update users set userName=${userName},gender = #{gender}, age = #{age} where userId = #{userId}
+        update users
+        set userName=${userName},email = #{email},country = #{country},gender = #{gender}, age = #{age},updateTime = #{updateTime}
+        where userId = #{userId}
     </update>
-    <delete id="deleteUserById" parameterType="int">
+    <delete id="deleteUserById" parameterType="String">
         delete from users where userId=#{userId}
     </delete>
 </mapper>

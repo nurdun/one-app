@@ -5,16 +5,16 @@ import java.util.List;
 
 import com.one.app.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 import com.one.app.POJO.User;
 
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
-@RestController
+@Controller
+@RequestMapping("/api")
 public class UserController {
     @Autowired
     UserService userService;
@@ -30,27 +30,27 @@ public class UserController {
 
     @RequestMapping(method = POST,value = "/getuser")
     @ResponseBody
-    public User getUserById(int userId){
+    public User getUserById(@RequestParam String userId){
         User user = new User();
         user =  userService.getUserById(userId);
         return user;
     }
 
-    @RequestMapping(method = POST,value = "/adduser")
+    @RequestMapping(method = POST,value = "/adduser",produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public String addUser(User user){
+    public String addUser(@RequestBody User user){
         return userService.addUser(user);
     }
 
-    @RequestMapping(method = POST,value = "/updateuser")
+    @RequestMapping(method = POST,value = "/updateuser",produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public int updateUser(User user){
+    public int updateUser(@RequestBody User user){
         return userService.updateUser(user);
     }
 
     @RequestMapping(method = POST,value = "/deleteuser")
     @ResponseBody
-    public String addUser(int userId){
+    public String addUser(@RequestParam String userId){
         return userService.deleteUserById(userId);
     }
  }

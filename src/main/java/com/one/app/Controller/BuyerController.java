@@ -3,11 +3,9 @@ package com.one.app.Controller;
 import com.one.app.Entity.BuyerEntity;
 import com.one.app.Service.BuyerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +15,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @CrossOrigin
 @Controller
+@RequestMapping("/api")
 public class BuyerController {
     @Autowired
     BuyerService buyerService;
@@ -37,15 +36,15 @@ public class BuyerController {
         return buyers;
     }
 
-    @RequestMapping(method = POST,value = "/addbuyer")
+    @RequestMapping(method = POST,value = "/addbuyer",produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public String addBuyer(BuyerEntity buyer){
+    public String addBuyer(@RequestBody BuyerEntity buyer){
        return buyerService.addBuyer(buyer);
     }
 
-    @RequestMapping(method = POST,value = "/updatebuyer")
+    @RequestMapping(method = POST,value = "/updatebuyer",produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public String updateBuyerById(BuyerEntity buyer){
+    public String updateBuyerById(@RequestBody BuyerEntity buyer){
         return buyerService.updateBuyer(buyer);
     }
 

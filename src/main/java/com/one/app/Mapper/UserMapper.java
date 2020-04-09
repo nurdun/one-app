@@ -12,7 +12,7 @@ public interface UserMapper {
 //    void creatTableNotExist();
 
 //   @Select("select * from users where userId = #{userId}")
-    User getUserById(int userId);
+    User getUserById(String userId);
 
 //    @Select("select * from users")
     List<User> getUsers();
@@ -24,5 +24,5 @@ public interface UserMapper {
     int updateUser(User user);
 
 //    @Delete("delete from users where userId=#{userId}")
-    void deleteUserById(int userId);
+    void deleteUserById(String userId);
 }
