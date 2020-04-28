@@ -69,40 +69,40 @@
     <java.version>1.8</java.version>
   </properties>
 
-  <profiles>
-    <profile>
-      <id>dev</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <spring.profiles.active>dev</spring.profiles.active>
-      </properties>
-    </profile>
-    <profile>
-      <id>prod</id>
-      <properties>
-        <spring.profiles.active>prod</spring.profiles.active>
-      </properties>
-    </profile>
-    <profile>
-      <id>qa</id>
-      <properties>
-        <spring.profiles.active>qa</spring.profiles.active>
-      </properties>
-    </profile>
-  </profiles>
+<!--  <profiles>-->
+<!--    <profile>-->
+<!--      <id>dev</id>-->
+<!--      <activation>-->
+<!--        <activeByDefault>true</activeByDefault>-->
+<!--      </activation>-->
+<!--      <properties>-->
+<!--        <spring.profiles.active>dev</spring.profiles.active>-->
+<!--      </properties>-->
+<!--    </profile>-->
+<!--    <profile>-->
+<!--      <id>prod</id>-->
+<!--      <properties>-->
+<!--        <spring.profiles.active>prod</spring.profiles.active>-->
+<!--      </properties>-->
+<!--    </profile>-->
+<!--    <profile>-->
+<!--      <id>qa</id>-->
+<!--      <properties>-->
+<!--        <spring.profiles.active>qa</spring.profiles.active>-->
+<!--      </properties>-->
+<!--    </profile>-->
+<!--  </profiles>-->
 
   <build>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <configuration>
-          <profiles>
-            <profile>dev</profile>
-          </profiles>
-        </configuration>
+<!--        <configuration>-->
+<!--          <profiles>-->
+<!--            <profile>dev</profile>-->
+<!--          </profiles>-->
+<!--        </configuration>-->
       </plugin>
     </plugins>
     <resources>
